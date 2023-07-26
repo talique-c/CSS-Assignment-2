@@ -1,0 +1,223 @@
+/*-- RESETS --*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*-- LAYOUTS --*/
+
+/* Header */
+header section {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #343A40;
+    padding-top: 1em;
+    
+}
+
+/* Album section */
+.album-example {
+    width: 80%;
+    margin: 8em auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* General background color */
+main > section:nth-of-type(2) {
+    background-color: #F8F9FA;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 75%;
+    margin: 1.5em auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #EBEBEC;
+}
+
+.thumbnail-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #55595C;
+    height: 30vh;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.thumbnail-subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 2em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Buttons */
+.button1,
+.button2 {
+    color: #fff;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 4px;
+    height: 4.5vh;
+    width: 8.5vw;
+}
+
+.button1 {
+    background-color: #007BFF;
+}
+
+.button2 {
+    background-color: #6C757D;
+}
+
+.view,
+.edit {
+    border-style: solid;
+    background-color: #fff;
+    color: #848C92;
+    border-color: #848C92;
+    border-width: 1px;
+    height: 4vh;
+    width: 3vw;
+    margin-left: 2em;
+    font-size: 1.2rem;
+}
+
+.view {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: none;
+}
+
+.edit {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-left: -2.5px;
+}
+
+/* Button links */
+.button1:hover {
+    background-color: #015ec2;
+}
+
+.button1:focus {
+    border: 4px solid rgba(92, 171, 255, 1);
+}
+
+.button2:hover {
+    background-color: #585f66;
+}
+
+.button2:focus {
+    border: 4px solid rgba(175, 180, 184, 1);
+}
+
+.view:hover {
+    color: white;
+    background-color: #848C92;
+}
+
+.view:focus {
+    border: 4px solid rgba(175, 180, 184, 1);
+}
+
+.edit:hover {
+    color: white;
+    background-color: #848C92;;
+}
+
+.edit:focus {
+    border: 4px solid rgba(175, 180, 184, 1);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    margin-top: 0;
+    margin: 1em auto;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 350;
+    font-size: 3rem;
+    color: black;
+}
+
+footer > p {
+    color: #6C757D;
+    width: 70%;
+    font-size: 1.4rem;
+    margin: 2em auto;
+    margin-left: 12.5em;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    width: 15%;
+    font-size: 1.4rem;
+   margin: 2em auto;
+}
+
+.album-example > p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #6C757D;
+    margin-left: 18em;
+    margin-right: 18em;
+    line-height: 1.5;
+}
+
+.thumbnail {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.thumbnail-subtitle > p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin: 1.5em 1.5em;
+}
+
+small {
+    margin-left: auto;
+    margin-right: 2em;
+    font-size: 1rem;
+    color: #55595C;
+}
